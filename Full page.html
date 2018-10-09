@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-rows: [header] 30px [content] 1fr [footer] 30px;
+            grid-template-columns: [aside_left] 1fr [main] 5fr [aside_right] 1fr;
+            grid-gap: 0;
+        }
+        header {
+            grid-row: header;
+            grid-column: 1 / -1;
+            background-color: black;
+        }
+        nav {
+            grid-row: header;
+            grid-column: 2;
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+
+        aside#left {
+            grid-row: 1 / span 3;
+            grid-column: aside_left;
+            background-color: cornsilk;
+        }
+
+        aside#right {
+            grid-row: 1 / span 3;
+            grid-column: aside_right;
+            background-color: cornsilk;
+        }
+
+        section {
+            grid-row: content;
+            grid-column: main;
+            background-color: white;
+
+        }
+
+        footer {
+            background-color: black;
+            grid-row: footer;
+            grid-column: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+        <nav>
+            <a>1</a>
+            <a>2</a>
+            <a>3</a>
+        </nav>
+    <section>
+        <img src="pianogirl.jpg">
+
+    </section>
+    <aside id="left"></aside>
+    <aside id="right"></aside>
+    <footer></footer>
+</div>
+</body>
+</html>
