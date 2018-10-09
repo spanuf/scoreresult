@@ -22,13 +22,6 @@
             grid-column: 1 / -1;
             background-color: black;
         }
-        nav {
-            grid-row: header;
-            grid-column: 2;
-            background-color: black;
-            text-align: center;
-            color: white;
-        }
 
         aside#left {
             grid-row: 1 / span 3;
@@ -54,14 +47,27 @@
             grid-row: footer;
             grid-column: 2;
         }
+        nav {
+            grid-row: header;
+            grid-column: 2;
+            background-color: black;
+            text-align: left;
+            color: white;
+            padding-top: 5px;
+        }
+        a#header{
+            padding-right: 200px;
+
+        }
     </style>
 </head>
 <body>
 <div class="grid-container">
         <nav>
-            <a>1</a>
-            <a>2</a>
-            <a>3</a>
+            <a id="header">Football</a>
+            <a id="header">Tennis</a>
+            <a id="header">Basketball</a>
+            <a id="header">Handball</a>
         </nav>
     <section>
         <img src="chiriches.jpg">
