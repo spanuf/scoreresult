@@ -5,17 +5,16 @@
     <title>Full Page</title>
     <style>
         html, body {
-            height: 100%
-        }
-        *{
             margin: 0;
             padding: 0;
+            height: 100%;
         }
         .grid-container {
             display: grid;
             grid-template-rows: [header] 30px [content] 1fr [footer] 30px;
             grid-template-columns: [aside_left] 1fr [main] 5fr [aside_right] 1fr;
             grid-gap: 0;
+            height: 100vh;
         }
         header {
             grid-row: header;
@@ -40,12 +39,14 @@
             grid-column: main;
             background-color: white;
 
+
         }
 
         footer {
-            background-color: black;
             grid-row: footer;
-            grid-column: 2;
+            grid-column: main;
+            color: white;
+            background-color: black;
         }
         nav {
             grid-row: header;
@@ -55,27 +56,37 @@
             color: white;
             padding-top: 5px;
         }
-        a#header{
-            padding-right: 200px;
-
+        html body div.grid-container nav a{
+            width: 25%;
+            display: block;
+            float: left;
+            text-align: center;
         }
+
+        html body div.grid-container footer a{
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
 <div class="grid-container">
         <nav>
-            <a id="header">Football</a>
-            <a id="header">Tennis</a>
-            <a id="header">Basketball</a>
-            <a id="header">Handball</a>
+            <a>Football</a>
+            <a>Tennis</a>
+            <a>Basketball</a>
+            <a>Handball</a>
         </nav>
     <section>
-        <img src="chiriches.jpg">
-
+        <img style="height: 590px; width: 1000px" src="chiriches.jpg">
     </section>
     <aside id="left"></aside>
     <aside id="right"></aside>
-    <footer></footer>
+    <footer>
+        <a>Something nice in the footer</a>
+    </footer>
 </div>
 </body>
 </html>
