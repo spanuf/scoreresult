@@ -52,7 +52,7 @@ footer {
     grid-gap: inherit;
 }
 html body div.grid-container navigation a{
-    width: 25%;
+    width: 20%;
     display: block;
     float: left;
     text-align: center;
