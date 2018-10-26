@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: cornsilk;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: [header] 1fr [content] 20fr [footer] 1fr;
+    grid-template-columns: [aside_left] 1fr [main] 5fr [aside_right] 1fr;
+    grid-gap: 0px;
+    height: 100vh;
+}
+header {
+    grid-row: header;
+    grid-column: 1 / -1;
+    background-color: black;
+}
+
+navigation {
+    grid-row: header;
+    grid-column: 2;
+    background-color: black;
+    text-align: left;
+    color: white;
+    padding-top: 5px;
+}
+
+aside#left {
+    grid-row: 1 / span 3;
+    grid-column: aside_left;
+    background-color: cornsilk;
+}
+
+aside#right {
+    grid-row: 1 / span 3;
+    grid-column: aside_right;
+    background-color: cornsilk;
+}
+
+section {
+    grid-row: content;
+    grid-column: main;
+    background-color: cornsilk;
+}
+
+footer {
+    grid-row: footer;
+    grid-column: main;
+    color: white;
+    background-color: black;
+    grid-gap: inherit;
+}
+html body div.grid-container navigation a{
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+html body div.grid-container footer a{
+    width: 50%;
+    display: block;
+    float: left;
+    text-align: center;
+}
