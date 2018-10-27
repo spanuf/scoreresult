@@ -76,6 +76,11 @@ html body div.grid-container navigation a:active {
     text-decoration: underline;
 }
 
+html body div.grid-container section iframe {
+    width: 100%;
+    height: 100%;
+
+}
 
 html body div.grid-container footer a{
     width: 50%;
