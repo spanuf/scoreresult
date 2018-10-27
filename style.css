@@ -58,11 +58,20 @@ html body div.grid-container navigation a{
     text-align: center;
 }
 
-html body div.grid-container navigation a:link, a:visited {
+html body div.grid-container navigation a:link {
     color: white;
     text-decoration: none;
 }
-html body div.grid-container navigation a:hover, a:active {
+html body div.grid-container navigation a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+html body div.grid-container navigation a:visited {
+    color: white;
+    text-decoration: none;
+}
+html body div.grid-container navigation a:active {
     color: orange;
     text-decoration: underline;
 }
