@@ -20,7 +20,13 @@
             <source media="(min-width:300px)" srcset="Images/handballtiny.jpg" alt="Nationala Romaniei 1970" title="Nationala Romaniei 1970">
             <img src="Images/handball.jpg" alt="Nationala Romaniei 1970" title="Nationala Romaniei 1970">
         </picture>
-        <!--<img src="Images/handball.jpg" alt="Nationala Romaniei 1970" title="Nationala Romaniei 1970">-->
+        <cite id="Handball" style="display:block;"></cite>
+        <button onclick="about()">About</button>
+        <script>
+            function about(){
+                document.getElementById("Handball").innerHTML = "Nationala de handbal a Romaniei, Campioana Mondiala in anul 1970";
+            }
+        </script>
     </section>
     <aside id="left"></aside>
     <aside id="right"></aside>

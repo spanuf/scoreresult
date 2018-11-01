@@ -20,9 +20,12 @@
             <source media="(min-width:300px)" srcset="Images/basketballtiny.jpg" alt="Ghita Muresan" title="Ghita Muresan">
             <img src="Images/basketball.jpg" alt="Ghita Muresan" title="Ghita Muresan">
         </picture>
-        <cite id="Ghita"></cite>
+        <cite id="Ghita" style="display:block"></cite>
+        <button onclick="about()">About</button>
         <script>
-            document.getElementById("Ghita").innerHTML = "Ghita Muresan, former NBA player";
+            function about() {
+                document.getElementById("Ghita").innerHTML = "Ghita Muresan, fost jucator NBA";
+            }
         </script>
     </section>
     <aside id="left"></aside>
