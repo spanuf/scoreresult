@@ -8,14 +8,18 @@
 <body>
 <div class="grid-container">
     <navigation>
-        <a  href="fullpage.html">Home</a>
+        <a href="fullpage.html">Home</a>
         <a href="football.html">Football</a>
         <a href="tennis.html">Tennis</a>
         <a>Basketball</a>
         <a href="handball.html">Handball</a>
     </navigation>
     <section>
-        <img src="Images/basketball.jpg" title="Ghita Muresan" alt="Ghita Muresan">
+        <picture>
+            <source media="(min-width:650px)" srcset="Images/basketball.jpg" alt="Ghita Muresan" title="Ghita Muresan">
+            <source media="(min-width:300px)" srcset="Images/basketballtiny.jpg" alt="Ghita Muresan" title="Ghita Muresan">
+            <img src="Images/basketball.jpg" alt="Ghita Muresan" title="Ghita Muresan">
+        </picture>
     </section>
     <aside id="left"></aside>
     <aside id="right"></aside>

@@ -82,6 +82,10 @@ html body div.grid-container section iframe {
 
 }
 
+html body div.grid-container section picture {
+    width: 100%;
+}
+
 html body div.grid-container section img {
     width: 100%;
 }
