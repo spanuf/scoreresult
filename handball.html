@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Full Page</title>
+    <!--<meta http-equiv="refresh" content="5"-->
+    <meta name="description" content="Livescore results">
+    <meta name="author" content="Pacini">
+
+    <title>Handball</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +19,18 @@
         <a>Handball</a>
     </navigation>
     <section>
-        <img src="handball.jpg">
+        <picture>
+            <source media="(min-width:650px)" srcset="Images/handball.jpg" alt="Nationala Romaniei 1970" title="Nationala Romaniei 1970">
+            <source media="(min-width:300px)" srcset="Images/handballtiny.jpg" alt="Nationala Romaniei 1970" title="Nationala Romaniei 1970">
+            <img src="Images/handball.jpg" alt="Nationala Romaniei 1970" title="Nationala Romaniei 1970">
+        </picture>
+        <cite id="Handball" style="display:block;"></cite>
+        <button onclick="about()">About</button>
+        <script>
+            function about(){
+                document.getElementById("Handball").innerHTML = "Nationala de handbal a Romaniei, Campioana Mondiala in anul 1970";
+            }
+        </script>
     </section>
     <aside id="left"></aside>
     <aside id="right"></aside>

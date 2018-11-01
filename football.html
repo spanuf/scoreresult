@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Full Page</title>
+    <!--<meta http-equiv="refresh" content="5"-->
+    <meta name="description" content="Livescore results">
+    <meta name="author" content="Pacini">
+
+    <title>Football</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +19,18 @@
         <a href="handball.html">Handball</a>
     </navigation>
     <section>
-        <img src="u21.jpg">
+        <picture>
+            <source media="(min-width:650px)" srcset="Images/u21.jpg" alt="Nationala U21 a Romaniei - 2018" title="Nationala U21 a Romaniei - 2018">
+            <source media="(min-width:300px)" srcset="Images/u21tiny.jpg" alt="Nationala U21 a Romaniei - 2018" title="Nationala U21 a Romaniei - 2018">
+            <img src="Images/u21tiny.jpg" alt="Nationala U21 a Romaniei - 2018" title="Nationala U21 a Romaniei - 2018">
+        </picture>
+        <cite id="u21" style="display:block"></cite>
+        <button onclick="about()">About</button>
+        <script>
+            function about(){
+                document.getElementById("u21").innerHTML = "Nationala de fotbal U21 a Romaniei, calificata la EURO 2019"
+            }
+        </script>
     </section>
     <aside id="left"></aside>
     <aside id="right"></aside>

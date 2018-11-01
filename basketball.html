@@ -2,20 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Full Page</title>
+    <!--<meta http-equiv="refresh" content="5"-->
+    <meta name="description" content="Livescore results">
+    <meta name="author" content="Pacini">
+
+    <title>Basketball</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="grid-container">
     <navigation>
-        <a  href="fullpage.html">Home</a>
+        <a href="fullpage.html">Home</a>
         <a href="football.html">Football</a>
         <a href="tennis.html">Tennis</a>
         <a>Basketball</a>
         <a href="handball.html">Handball</a>
     </navigation>
     <section>
-        <img src="basketball.jpg">
+        <picture>
+            <source media="(min-width:650px)" srcset="Images/basketball.jpg" alt="Ghita Muresan" title="Ghita Muresan">
+            <source media="(min-width:300px)" srcset="Images/basketballtiny.jpg" alt="Ghita Muresan" title="Ghita Muresan">
+            <img src="Images/basketball.jpg" alt="Ghita Muresan" title="Ghita Muresan">
+        </picture>
+        <cite id="Ghita" style="display:block"></cite>
+        <button onclick="about()">About</button>
+        <script>
+            function about() {
+                document.getElementById("Ghita").innerHTML = "Ghita Muresan, fost jucator NBA";
+            }
+        </script>
     </section>
     <aside id="left"></aside>
     <aside id="right"></aside>
