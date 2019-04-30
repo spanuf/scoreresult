@@ -51,11 +51,23 @@ footer {
     background-color: black;
     grid-gap: inherit;
 }
+
+html body div.grid-container navigation span{
+    width: 20%;
+    display: block;
+    float: left;
+    text-align: center;
+    color: orange;
+    font-size: 1.5vw;
+}
+
+
 html body div.grid-container navigation a{
     width: 20%;
     display: block;
     float: left;
     text-align: center;
+    font-size: 1.5vw;
 }
 
 html body div.grid-container navigation a:link {
@@ -95,4 +107,5 @@ html body div.grid-container footer a{
     display: block;
     float: left;
     text-align: center;
+    font-size: 1.5vw;
 }
